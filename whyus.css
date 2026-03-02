@@ -1,0 +1,137 @@
+/* ============================================================
+   WHY US PAGE — whyus.css
+   ============================================================ */
+
+.page-title { font-family: var(--font-display); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 900; line-height: 1.05; margin-bottom: 1rem; }
+.page-title em { color: var(--gold); font-style: italic; }
+.page-subtitle { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 500px; }
+
+/* Reasons */
+.reasons-section { padding: 7rem 0; background: var(--dark); }
+.reasons-intro { max-width: 600px; margin-bottom: 5rem; }
+.reasons-intro p { color: var(--text-muted); font-size: 1rem; line-height: 1.85; margin-top: 1.25rem; }
+
+.reasons-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--dark-border);
+  border-left: 1px solid var(--dark-border);
+}
+.reason-item {
+  display: grid;
+  grid-template-columns: 4rem 3.5rem 1fr;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 3rem 2.5rem;
+  border-right: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+  transition: background 0.3s;
+}
+.reason-item:hover { background: var(--dark-2); }
+.reason-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(201,168,76,0.12);
+  line-height: 1;
+}
+.reason-icon {
+  width: 50px; height: 50px;
+  background: var(--gold-muted);
+  border: 1px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+}
+.reason-body h3 {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+.reason-body p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.85; }
+
+/* Stats */
+.why-stats-section {
+  background: var(--black);
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+  padding: 4.5rem 0;
+}
+.why-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+.why-stat {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--dark-border);
+}
+.why-stat:last-child { border-right: none; }
+.why-stat span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+.why-stat label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* Certifications */
+.certs-section { padding: 7rem 0; background: var(--dark-2); }
+.section-center { text-align: center; margin-bottom: 4rem; }
+.label-center { justify-content: center; }
+.label-center::before { display: none; }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.cert-item {
+  background: var(--dark-3);
+  border: 1px solid var(--dark-border);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.cert-item:hover { border-color: var(--gold-border); transform: translateY(-4px); }
+.cert-icon {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+.cert-item span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+@media (max-width: 900px) {
+  .reasons-list { grid-template-columns: 1fr; }
+  .reason-item { grid-template-columns: 3rem 1fr; }
+  .reason-num { font-size: 2rem; }
+  .why-stats-grid { grid-template-columns: repeat(3, 1fr); flex-wrap: wrap; }
+  .why-stat:nth-child(3) { border-right: none; }
+}
+@media (max-width: 600px) {
+  .why-stats-grid { grid-template-columns: 1fr 1fr; }
+  .why-stat { border-right: none; border-bottom: 1px solid var(--dark-border); }
+  .why-stat:nth-child(odd) { border-right: 1px solid var(--dark-border); }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Apex Construction</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body data-page="contact">
+
+  <div id="header-placeholder"></div>
+
+  <main>
+
+    <!-- ══ PAGE HERO ══ -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <div class="label reveal">Get In Touch</div>
+        <h1 class="page-title reveal delay-1">Start Your <em>Project</em></h1>
+        <p class="page-subtitle reveal delay-2">Tell us about your vision. We'll make it extraordinary.</p>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT BODY ══ -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form Side -->
+          <div class="contact-form-wrap reveal">
+            <div class="label">Send a Message</div>
+            <h2 class="section-title">Let's <em>Connect</em></h2>
+            <p class="contact-intro">Fill out the form below and a member of our team will reach out within one business day.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name *</label>
+                  <input type="text" id="fname" name="fname" placeholder="James" required>
+                  <span class="form-error" id="fname-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name *</label>
+                  <input type="text" id="lname" name="lname" placeholder="Morrison" required>
+                  <span class="form-error" id="lname-error"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="james@example.com" required>
+                <span class="form-error" id="email-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (212) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="service">Project Type *</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="residential">Residential Construction</option>
+                  <option value="commercial">Commercial Construction</option>
+                  <option value="design-build">Design &amp; Build</option>
+                  <option value="project-management">Project Management</option>
+                  <option value="renovation">Renovation &amp; Remodeling</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error" id="service-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="budget">Estimated Budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select a range…</option>
+                  <option value="under-1m">Under $1M</option>
+                  <option value="1m-5m">$1M – $5M</option>
+                  <option value="5m-20m">$5M – $20M</option>
+                  <option value="20m-100m">$20M – $100M</option>
+                  <option value="100m+">$100M+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Project Description *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your vision, timeline, and any specific requirements…" required></textarea>
+                <span class="form-error" id="message-error"></span>
+              </div>
+              <button type="submit" class="btn-gold form-submit">
+                <span class="btn-text">SEND MESSAGE</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+              <div id="form-success" class="form-success hidden">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Thank you! We'll be in touch within one business day.
+              </div>
+            </form>
+          </div>
+
+          <!-- Info Side -->
+          <div class="contact-info reveal delay-2">
+            <div class="info-card">
+              <h3>Contact Information</h3>
+              <div class="info-items">
+                <div class="info-item">
+                  <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                  <div>
+                    <span class="info-label">Phone</span>
+                    <a href="tel:+12125559898" class="info-value">+1 (212) 555-9898</a>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                  <div>
+                    <span class="info-label">Email</span>
+                    <a href="mailto:info@apexconstruction.com" class="info-value">info@apexconstruction.com</a>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                  <div>
+                    <span class="info-label">Address</span>
+                    <span class="info-value">350 Fifth Avenue, Suite 4800<br>New York, NY 10118</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                  <div>
+                    <span class="info-label">Hours</span>
+                    <span class="info-value">Monday – Friday: 8:00am – 6:00pm<br>Saturday: 9:00am – 2:00pm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card info-card-dark">
+              <h3>What to Expect</h3>
+              <div class="expect-list">
+                <div class="expect-item">
+                  <div class="expect-dot"></div>
+                  <p><strong>Response within 24 hours</strong> — a senior member of our team will review your inquiry and reach out.</p>
+                </div>
+                <div class="expect-item">
+                  <div class="expect-dot"></div>
+                  <p><strong>Complimentary consultation</strong> — a 60-minute discovery call at no charge.</p>
+                </div>
+                <div class="expect-item">
+                  <div class="expect-dot"></div>
+                  <p><strong>Detailed proposal</strong> — a comprehensive project proposal within 5 business days.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="global.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Apex Construction</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body data-page="projects">
+
+  <div id="header-placeholder"></div>
+
+  <main>
+
+    <!-- ══ PAGE HERO ══ -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <div class="label reveal">Portfolio</div>
+        <h1 class="page-title reveal delay-1">Our <em>Projects</em></h1>
+        <p class="page-subtitle reveal delay-2">A curated selection of landmark projects that define the Apex standard.</p>
+      </div>
+    </section>
+
+    <!-- ══ FILTER ══ -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="renovation">Renovation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROJECTS MASONRY ══ -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="proj-masonry" id="projects-grid">
+
+          <div class="pm-card pm-lg reveal" data-category="residential">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&q=80" alt="Park Avenue Penthouse">
+            <div class="pm-overlay">
+              <span class="pm-tag">Residential · New York</span>
+              <h3>Park Avenue Penthouse</h3>
+              <p>12,000 sq ft · $24M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card reveal delay-1" data-category="commercial">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Hudson Yards Office Tower">
+            <div class="pm-overlay">
+              <span class="pm-tag">Commercial · New York</span>
+              <h3>Hudson Yards Tower</h3>
+              <p>320,000 sq ft · $180M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card reveal delay-2" data-category="residential">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Greenwich Estate">
+            <div class="pm-overlay">
+              <span class="pm-tag">Residential · Connecticut</span>
+              <h3>Greenwich Estate</h3>
+              <p>18,500 sq ft · $32M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card pm-tall reveal" data-category="commercial">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Midtown Gallery">
+            <div class="pm-overlay">
+              <span class="pm-tag">Commercial · New York</span>
+              <h3>Midtown Gallery &amp; Atrium</h3>
+              <p>65,000 sq ft · $42M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card reveal delay-1" data-category="renovation">
+            <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&q=80" alt="Fifth Ave Renovation">
+            <div class="pm-overlay">
+              <span class="pm-tag">Renovation · New York</span>
+              <h3>Fifth Avenue Brownstone</h3>
+              <p>8,200 sq ft · $14M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card reveal delay-2" data-category="residential">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80" alt="Hamptons Retreat">
+            <div class="pm-overlay">
+              <span class="pm-tag">Residential · Hamptons</span>
+              <h3>Hamptons Beach Retreat</h3>
+              <p>9,800 sq ft · $18M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card pm-lg reveal" data-category="commercial">
+            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1000&q=80" alt="Corporate HQ">
+            <div class="pm-overlay">
+              <span class="pm-tag">Commercial · New Jersey</span>
+              <h3>Fortune 500 Corporate HQ</h3>
+              <p>450,000 sq ft · $220M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+          <div class="pm-card reveal delay-1" data-category="renovation">
+            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80" alt="Historic Hotel">
+            <div class="pm-overlay">
+              <span class="pm-tag">Renovation · Boston</span>
+              <h3>Historic Hotel Restoration</h3>
+              <p>120,000 sq ft · $85M</p>
+              <span class="pm-arrow">→</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="global.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>
