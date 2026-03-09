@@ -1,5 +1,5 @@
 /* ============================================================
-   APEX CONSTRUCTION — GLOBAL JS
+   LA CASTLE HOMES — GLOBAL JS
    Handles: fragment loading, header scroll, mobile menu,
             active nav, scroll reveal
    ============================================================ */

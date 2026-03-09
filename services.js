@@ -10,7 +10,7 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          document.title = `${entry.target.querySelector('h2').textContent} — Apex Construction`;
+          document.title = `${entry.target.querySelector('h2').textContent} — La Castle Homes`;
         }
       });
     }, { threshold: 0.4 });
