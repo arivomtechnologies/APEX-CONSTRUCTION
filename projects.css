@@ -93,7 +93,7 @@
   color: #fff;
   margin-bottom: 0.3rem;
 }
-.pm-overlay p { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+/* .pm-overlay p { font-size: 0.78rem; color: rgba(255,255,255,0.55); } */
 .pm-arrow {
   position: absolute;
   top: 1.5rem; right: 1.5rem;
