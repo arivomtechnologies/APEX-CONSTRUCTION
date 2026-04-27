@@ -71,15 +71,11 @@
 
 .pm-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.75rem;
   transition: background 0.3s;
-}
-.pm-card:hover .pm-overlay {
-  background: linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.05) 100%);
 }
 
 .pm-tag {
